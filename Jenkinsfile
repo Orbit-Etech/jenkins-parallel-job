@@ -10,9 +10,7 @@ pipeline{
       parallel{
         stage('sub-job1'){
           steps{
-            sh '''#!/bin/bash
-                     sudo systemctl status Jenkins 
-            '''
+            sh 'uptime' 
           }
         }
         stage('sub-job2'){
