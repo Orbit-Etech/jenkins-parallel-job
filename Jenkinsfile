@@ -15,12 +15,12 @@ pipeline{
         }
         stage('sub-job2'){
           steps{
-            echo 'action2'
+            sh 'lsblk'
           }
         }
         stage('sub-job3'){
             steps{
-                sh '/var/lib/jenkins/workspace/jenkins-parallel-job@tmp/durable-49f82009/cpustat.sh'
+                sh 'lscpu'
             }
         }
       }
