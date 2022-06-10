@@ -20,7 +20,7 @@ pipeline{
         }
         stage('sub-job3'){
             steps{
-                sh '/mnt/c/Users/Uche/Desktop/Uigwe/jenkins-parallel/jenkins-parallel-job/cpustat.sh'
+                sh 'cpustat.sh'
             }
         }
       }
