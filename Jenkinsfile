@@ -20,7 +20,7 @@ pipeline{
         }
         stage('sub-job3'){
             steps{
-                sh 'lscpu'
+                sh 'bash/var/lib/jenkins/workspace/jenkins-parallel-job/cpustat.sh'
             }
         }
       }
