@@ -10,7 +10,7 @@ pipeline{
       parallel{
         stage('sub-job1'){
           steps{
-            echo 'simpletest.sh'
+            sh './jenkins-parallel-job/simpletest.sh'
           }
         }
         stage('sub-job2'){
