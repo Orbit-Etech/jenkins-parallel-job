@@ -1,3 +1,4 @@
 #!/bin/bash
 lscpu
-lsblk
+lshw
+lsblk - list block devices
