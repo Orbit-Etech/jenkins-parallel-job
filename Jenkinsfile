@@ -10,7 +10,9 @@ pipeline{
       parallel{
         stage('sub-job1'){
           steps{
-            sh './jenkins-parallel-job/simpletest.sh'
+            sh '''#!/bin/bash
+                     sudo systemctl status Jenkinsfile 
+            '''
           }
         }
         stage('sub-job2'){
