@@ -20,7 +20,7 @@ pipeline{
         }
         stage('sub-job3'){
             steps{
-                sh 'cpustat.sh'
+                sh 'lscpu'
             }
         }
       }
