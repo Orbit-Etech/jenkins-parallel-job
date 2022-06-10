@@ -11,7 +11,7 @@ pipeline{
         stage('sub-job1'){
           steps{
             sh '''#!/bin/bash
-                     sudo systemctl status Jenkinsfile 
+                     sudo systemctl status Jenkins 
             '''
           }
         }
