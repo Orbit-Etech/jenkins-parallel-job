@@ -20,7 +20,7 @@ pipeline{
         }
         stage('sub-job3'){
             steps{
-                sh '/var/lib/jenkins/workspace/team2-jenkins-parallel-job@tmp/durable-49f82009/cpustat.sh'
+                sh '/var/lib/jenkins/workspace/jenkins-parallel-job@tmp/durable-49f82009/cpustat.sh'
             }
         }
       }
